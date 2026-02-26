@@ -46,8 +46,6 @@ export default function Diary({ userId, onLogout }: Props) {
   const [todayEntries, setTodayEntries] = useState<Entry[]>([]);
   const [recentEntries, setRecentEntries] = useState<Entry[]>([]);
 
-  const dateKey = useMemo(() => todayKey(), []);
-
   const entriesCol = useMemo(() => collection(db, "users", userId, "entries"), [userId]);
 
   async function load() {
