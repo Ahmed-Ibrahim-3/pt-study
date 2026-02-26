@@ -1,0 +1,23 @@
+.diaryGrid {
+    display: grid;
+    gap: 16px;
+  }
+  
+  .panel {
+    border-radius: 16px;
+    padding: 24px;
+  }
+  
+  @media (min-width: 900px) {
+    .diaryGrid {
+      grid-template-columns: 2fr 1fr;
+      align-items: start;
+    }
+  
+    .stickySide {
+      position: sticky;
+      top: 16px;
+      max-height: calc(100vh - 32px);
+      overflow: auto;
+    }
+  }
