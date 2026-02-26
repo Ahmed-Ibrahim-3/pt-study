@@ -21,3 +21,29 @@
       overflow: auto;
     }
   }
+
+.entryBtn {
+    appearance: none;
+    -webkit-appearance: none;
+  
+    width: 100%;
+    text-align: left;
+  
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 12px;
+    padding: 12px;
+  
+    /* background: rgba(255, 255, 255, 0.06); */
+    /* color: inherit; keeps it readable in dark mode */
+  
+    cursor: pointer;
+  }
+  
+  .entryBtn:hover {
+    background: rgba(255, 255, 255, 0.09);
+  }
+  
+  .entryBtnActive {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.28);
+  }

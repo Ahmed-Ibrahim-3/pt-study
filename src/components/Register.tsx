@@ -32,11 +32,11 @@ export default function Register({ onRegistered }: Props) {
     <div style={{ display: "grid", gap: 12 }}>
       <h2>First time here?</h2>
       <p style={{ color: "#555" }}>
-        Create your diary login ID. Save it somewhere safe — it acts like your password.
+        Create your login ID. Save it somewhere safe — it acts like your password.
       </p>
 
       <button disabled={busy} onClick={createAccount} style={{ padding: 12, fontSize: 16 }}>
-        {busy ? "Creating…" : "Create my diary ID"}
+        {busy ? "Creating…" : "Create my ID"}
       </button>
 
       {lastCreatedId && (
